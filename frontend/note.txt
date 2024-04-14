@@ -1,0 +1,81 @@
+// document.getElementById('checkURL').addEventListener('click',async () =>{
+//     // resultDiv0.style.display = '';
+//     console.log('Check button clicked'); // Log when the button is clicked
+//     let [tab] = chrome.tabs.query({active: true, currentWindow: true});
+//     console.log('Current tab:', tab); // Log the tab object to verify URL is accessible
+//     if(tab.url && tab.url.includes("youtube.com/watch")){
+//         try {
+//             const response = await fetch('http://localhost:8000/val_url', {
+//                 method: 'POST',
+//                 headers: {
+//                     'Content-Type': 'application/json',
+//                 },
+//                 body: JSON.stringify({url: tab.url}),
+//             });
+//             const data = await response.json();
+//             resultDiv0.textContent = data.results;
+//             // if (data.result.includes('Yes')) {
+//             //     resultDiv.classList.add('alert-danger');
+//             // }else{
+//             //     resultDiv.classList.add('alert-success');
+//             // }
+//             // document.getElementById('result').textContent = data.result
+//             resultDiv0.style.display = 'block';
+//             fact =true
+//             document.getElementById('result0').textContent = data.results;
+//         } catch (error) {
+//             console.error('Error:', error); // Log any errors encountered during fetch
+//             document.getElementById('result0').textContent = 'there is no transcript for this video';
+//         } 
+        
+//     }else{
+//         console.log('No Youtube URL found in current tab'); // Log if no URL is found
+//         resultDiv0.textContent ="this is not a youtube video link";
+//         resultDiv0.style.display = 'block';
+//     }
+
+// });
+
+// document.getElementById('checkButton').addEventListener('click', async () => { 
+//     const resultDiv = document.getElementById('result');
+//     const  textInput = document.getElementById('inputText').value;
+//     resultDiv.style.display = 'none';
+//     // if (tab.url && tab.url.includes("youtube.com/watch") ) {
+//     //     console.log('Sending request to backend with URL:', tab.url); // Log the URL being sent
+//     if (fact){
+//         if ( textInput ){
+//             try {
+//                 const response = await fetch('http://localhost:8000/yt_search', {
+//                     method: 'POST',
+//                     headers: {
+//                         'Content-Type': 'application/json',
+//                     },
+//                     body: JSON.stringify({textInput:textInput}),
+//                 });
+//                 const data = await response.json();
+//                 resultDiv.textContent = data.result;
+//                 // if (data.result.includes('Yes')) {
+//                 //     resultDiv.classList.add('alert-danger');
+//                 // }else{
+//                 //     resultDiv.classList.add('alert-success');
+//                 // }
+//                 document.getElementById('result').textContent = data.result
+//                 resultDiv.style.display = 'block';
+//             } catch (error) {
+//                 console.error('Error:', error); // Log any errors encountered during fetch
+//                 document.getElementById('result').textContent = 'Error checking URL.';
+//             }
+//         }else{
+//         resultDiv.textContent ="please provide the context you want to search";
+//         resultDiv.style.display = 'block';
+//         }
+//     }else{
+//         document.getElementById('result').textContent = 'This link is not validated';
+//         resultDiv.style.display = 'block';
+//     }
+//     // } else {
+//     //     console.log('No URL found in current tab'); // Log if no URL is found
+//     //     resultDiv.textContent ="this is not a youtube video link";
+//     //     resultDiv.style.display = 'block';
+//     // }
+// });
