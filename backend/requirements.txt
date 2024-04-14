@@ -1,0 +1,11 @@
+fastapi[all]
+python-dotenv
+youtube-transcript-api
+langchain-google-genai
+ctransformers
+torch
+sentence_transformers
+langchain
+langchain-community
+faiss-cpu
+pydantic
