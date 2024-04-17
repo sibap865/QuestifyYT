@@ -50,7 +50,7 @@ uvicorn app:app
 * Turn devloper mode on by clicking on devloper mode on the top right corner.
 * Load unpacked folder i.e the frontend folder (because it contain manifest.json)
 * Pin the YouTube_note_search chrome extension and open in any youtube education video and take advantage of YouTube note search feature (click on the chrome extension and use it).
---
+</br>
 follow 💚 me in Github.
 ## Github: [Github](https://github.com/sibap865)
 Connect with me for more projects like this 😊:
