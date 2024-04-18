@@ -2,6 +2,7 @@
 
 document.getElementById('checkURL').addEventListener('click', async () => {    
     const resultDiv = document.getElementById('result');
+    const feedbackdiv = document.getElementById('feedback');
     const resultDiv0 = document.getElementById('result0');
     var textInput = document.getElementById('inputText').value;
     resultDiv0.textContent = 'validatig URL';
@@ -45,6 +46,7 @@ document.getElementById('checkURL').addEventListener('click', async () => {
                                 //     resultDiv.classList.add('alert-success');
                                 // }
                                 document.getElementById('result').textContent = data.result
+                                feedbackdiv.style.display ='block';
                                 resultDiv.style.display = 'block';
                             } catch (error) {
                                 console.error('Error:', error); // Log any errors encountered during fetch
