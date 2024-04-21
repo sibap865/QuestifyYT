@@ -1,6 +1,7 @@
 # YouTube_note_search
 This project is helpful for searching notes from Youtube videos using RetrivalQA RAG on YouTube transcripts.
 
+![workflow ](https://github.com/sibap865/YouTube_note_search/blob/main/utils/forkflow.png)
 ## About the YouTube_note_search chrome extension
 * This Chrome extension is useful when you have watched a YouTube video but have not taken notes, which is much needed for revision.
 * By using our Chrome extension, you can ask questions about the YouTube video. It will generate useful information only from the video with the help of RAG.
