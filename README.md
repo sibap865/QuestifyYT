@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ```bash
 GOOGLE_API_KEY ="your gemini api key"
 LANGCHAIN_API_KEY ="your langchain api key"
-LANGCHAIN_PROJECT ="TEST LLM RAG APP" #this is for tracing uoyr RAG app
+LANGCHAIN_PROJECT ="TEST LLM RAG APP" #this is for tracing your RAG app
 ```
 ```bash
 # Finally run the following command
