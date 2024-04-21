@@ -1,8 +1,8 @@
-# YouTube_note_search
+# QuestifyYT Chrome extension
 This project is helpful for searching notes from Youtube videos using RetrivalQA RAG on YouTube transcripts.
 
-![workflow ](https://github.com/sibap865/YouTube_note_search/blob/main/utils/forkflow.png)
-## About the YouTube_note_search chrome extension
+![workflow ](https://github.com/sibap865/QuestifyYT/blob/main/utils/forkflow.png)
+## About the QuestifyYT chrome extension
 * This Chrome extension is useful when you have watched a YouTube video but have not taken notes, which is much needed for revision.
 * By using our Chrome extension, you can ask questions about the YouTube video. It will generate useful information only from the video with the help of RAG.
 
@@ -38,11 +38,10 @@ conda activate geminienv
 cd backend
 pip install -r requirements.txt
 ```
-### STEP 04-  Create a .env file and add the gemini api key and langchain api key
-
+### STEP 04-  Create a .env file in backend dir and add the gemini api key, langchain api key and langchain project name
 ```bash
 GOOGLE_API_KEY ="your gemini api key"
-LANGCHAIN_API_KEY ="your langchain api key"
+LANGCHAIN_API_KEY ="your langsmith api key"
 LANGCHAIN_PROJECT ="TEST LLM RAG APP" #this is for tracing your RAG app
 ```
 ```bash
@@ -55,6 +54,9 @@ uvicorn app:app
 * Turn devloper mode on by clicking on devloper mode on the top right corner.
 * Load unpacked folder i.e the frontend folder (because it contain manifest.json)
 * Pin the YouTube_note_search chrome extension and open in any youtube education video and take advantage of YouTube note search feature (click on the chrome extension and use it).
+
+### you can view the results in langsmith/projects
+ 
 ### follow 💚 me in Github.
 ### Github: [Github](https://github.com/sibap865)
 
