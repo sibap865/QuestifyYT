@@ -13,15 +13,15 @@ This project is helpful for searching notes from Youtube videos using RetrivalQA
 * A LLM retrival chain retrives the relevent results from the retriver and show to end user.
 
 ## How to run?
-
-### STEPS 01:
+* You should have anaconda software or python 3.10 or above.
+### STEPS 01-
 
 Clone the repository
 
 ```bash
 https://github.com/sibap865/YouTube_note_search.git
 ```
-### STEP 02- Create a conda environment after opening the repository
+### STEP 02- Create a conda environment or python enviroment after opening the repository
 
 ```bash
 conda create -n geminienv python=3.10 -y
@@ -31,20 +31,24 @@ conda create -n geminienv python=3.10 -y
 conda activate geminienv
 ```
 
-
 ### STEP 03- install the requirements
 ```bash
 # go to backend folder and install the requirements
 cd backend
 pip install -r requirements.txt
 ```
+### STEP 04-  Create a .env file and add the gemini api key and langchain api key
 
-
+```bash
+GOOGLE_API_KEY ="your gemini api key"
+LANGCHAIN_API_KEY ="your langchain api key"
+LANGCHAIN_PROJECT ="TEST LLM RAG APP" #this is for tracing uoyr RAG app
+```
 ```bash
 # Finally run the following command
 uvicorn app:app
 ```
-### STEP 04- setup the Chrome Extension
+### STEP 05- setup the Chrome Extension
 
 * Open the Chrome browser and go to Extensions, then manage Extensions.
 * Turn devloper mode on by clicking on devloper mode on the top right corner.

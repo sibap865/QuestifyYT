@@ -18,6 +18,8 @@ load_dotenv()
 
 # create & add a .env file with the google api key
 api =os.getenv("GOOGLE_API_KEY") #uncomment this during locally
+os.environ["LANGCHAIN_TRACING_V2"] ="true"
+os.environ["LANGCHAIN_API_KEY"] =os.getenv('LANGCHAIN_API_KEY')
 genai.configure(api_key=api)  
 app = FastAPI()
 url_val =True
