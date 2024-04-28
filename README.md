@@ -13,6 +13,19 @@ This project is helpful for searching notes from Youtube videos using RetrivalQA
 * If the video is ready to search, user can ask questions about it.
 * A LLM retrival chain retrives the relevent results from the retriver and show to end user.
 
+## Tech stack
+langchain,Faiss vector db,BAAI/bge-large-en for generating embeddings,RecursiveCharacterTextSplitter,gemini-pro as llm,RetrivalQA chain,fastapi,langsmith,
+YoutubeLoader,chrome extenstion
+
+## Resources for this projects
+* [Build LLM chrome Extension](https://youtu.be/9RKXffJsJhs?si=7SEsg-YQaMP6GRLt) by AI Anytime
+
+* [Langchain ONe SHOT](https://youtu.be/swCPic00c30?si=EsE0eU4dHGChDq1L) by Krish Naik
+
+* [Langsmith ](https://youtu.be/3Gcm27l-uyQ?si=6HOKBFBvTyjd-djE) by Krish Naik
+
+
+
 ## How to run?
 * You should have anaconda software or python 3.10 or above.
 ### STEPS 01-
